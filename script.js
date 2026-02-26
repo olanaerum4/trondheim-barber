@@ -118,3 +118,69 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Trondheim VVS - Nettside lastet 🔧');
 });
+
+// Nettbutikk Handlekurv
+let cart = [];
+
+function addToCart(id, name, price) {
+    const existingItem = cart.find(item => item.id === id);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ id, name, price, quantity: 1 });
+    }
+    
+    updateCartDisplay();
+    
+    // Vis bekreftelse
+    alert(`${name} lagt i handlekurven!`);
+}
+
+function removeFromCart(id) {
+    cart = cart.filter(item => item.id !== id);
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    const cartItemsDiv = document.getElementById('cart-items');
+    const cartTotalDiv = document.getElementById('cart-total');
+    const totalPriceSpan = document.getElementById('total-price');
+    
+    if (cart.length === 0) {
+        cartItemsDiv.innerHTML = '<p class="empty-cart">Handlekurven er tom</p>';
+        cartTotalDiv.style.display = 'none';
+    } else {
+        let html = '';
+        let total = 0;
+        
+        cart.forEach(item => {
+            const itemTotal = item.price * item.quantity;
+            total += itemTotal;
+            html += `
+                <div class="cart-item">
+                    <span class="cart-item-name">${item.name} x${item.quantity}</span>
+                    <span class="cart-item-price">kr ${itemTotal.toLocaleString()}</span>
+                    <button class="remove-btn" onclick="removeFromCart('${item.id}')">×</button>
+                </div>
+            `;
+        });
+        
+        cartItemsDiv.innerHTML = html;
+        totalPriceSpan.textContent = `kr ${total.toLocaleString()}`;
+        cartTotalDiv.style.display = 'flex';
+    }
+}
+
+function checkout() {
+    if (cart.length === 0) {
+        alert('Handlekurven er tom!');
+        return;
+    }
+    
+    const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    alert(`Takk for din bestilling!\n\nTotalt: kr ${total.toLocaleString()}\n\nVi kontakter deg for levering/installasjon.`);
+    
+    cart = [];
+    updateCartDisplay();
+}

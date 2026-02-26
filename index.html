@@ -19,6 +19,7 @@
             </a>
             <nav class="nav">
                 <a href="#tjenester">Tjenester</a>
+                <a href="#butikk">Butikk</a>
                 <a href="#om-oss">Om oss</a>
                 <a href="#kontakt" class="nav-cta">Kontakt oss</a>
             </nav>
@@ -146,6 +147,87 @@
                     </svg>
                     73 50 12 34
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nettbutikk -->
+    <section id="butikk" class="shop">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nettbutikk</span>
+                <h2>Kjøp VVS-produkter</h2>
+                <p>Populære produkter vi installerer. Bestill her og få levert hjem - eller vi installerer!</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="shop-product">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&q=80" alt="Dusjsett">
+                    </div>
+                    <div class="product-details">
+                        <h3>FM Mattsson Dusjsett</h3>
+                        <p class="product-desc">Komplett dusjsett med termostatbatteri</p>
+                        <div class="product-price-buy">
+                            <span class="price">kr 3 490</span>
+                            <button class="buy-btn" onclick="addToCart('dusj1', 'FM Mattsson Dusjsett', 3490)">Kjøp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-product">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="Servantbatteri">
+                    </div>
+                    <div class="product-details">
+                        <h3>Oras Servantbatteri</h3>
+                        <p class="product-desc">Enkelgreppsbatteri med pop-up ventil</p>
+                        <div class="product-price-buy">
+                            <span class="price">kr 1 290</span>
+                            <button class="buy-btn" onclick="addToCart('servant1', 'Oras Servantbatteri', 1290)">Kjøp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-product">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80" alt="Varmepumpe">
+                    </div>
+                    <div class="product-details">
+                        <h3>Mitsubishi Varmepumpe</h3>
+                        <p class="product-desc">MSZ-LN25VG - inkl. montering</p>
+                        <div class="product-price-buy">
+                            <span class="price">kr 14 900</span>
+                            <button class="buy-btn" onclick="addToCart('varme1', 'Mitsubishi Varmepumpe', 14900)">Kjøp</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-product">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=400&q=80" alt="Toalett">
+                    </div>
+                    <div class="product-details">
+                        <h3>IDO Seven D Toalett</h3>
+                        <p class="product-desc">Gulvstående toalett med myk lukk</p>
+                        <div class="product-price-buy">
+                            <span class="price">kr 2 990</span>
+                            <button class="buy-btn" onclick="addToCart('toalett1', 'IDO Seven D Toalett', 2990)">Kjøp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Handlekurv -->
+            <div class="cart-box">
+                <h3>🛒 Handlekurv</h3>
+                <div id="cart-items">
+                    <p class="empty-cart">Handlekurven er tom</p>
+                </div>
+                <div class="cart-total" id="cart-total" style="display:none;">
+                    <strong>Totalt: <span id="total-price">kr 0</span></strong>
+                    <button class="checkout-btn" onclick="checkout()">Gå til kassen</button>
+                </div>
             </div>
         </div>
     </section>
