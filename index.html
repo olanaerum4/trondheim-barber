@@ -3,351 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trondheim VVS - Din lokale rørlegger | Varme, Ventilasjon & Sanitær</title>
+    <title>Trondheim VVS AS - Rørlegger i Trondheim</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <header class="header">
         <div class="container">
-            <a href="#" class="logo">
-                <i class="fas fa-faucet"></i>
-                Trondheim VVS
-            </a>
-            <ul class="nav-links">
-                <li><a href="#tjenester">Tjenester</a></li>
-                <li><a href="#om-oss">Om oss</a></li>
-                <li><a href="#prosjekter">Prosjekter</a></li>
-                <li><a href="#kontakt" class="btn-nav">Kontakt oss</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="logo">
+                <span class="logo-icon">🔧</span>
+                <div class="logo-text">
+                    <strong>Trondheim VVS AS</strong>
+                    <small>Org.nr: 912 345 678</small>
+                </div>
             </div>
+            <nav class="nav">
+                <a href="#tjenester">Det vi gjør</a>
+                <a href="#om-oss">Om oss</a>
+                <a href="#kontakt" class="nav-cta">Kontakt</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=1920" alt="Rørlegger på jobb">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="badge"><i class="fas fa-check-circle"></i> 25 års erfaring</span>
-                <h1>Din lokale rørlegger i Trondheim</h1>
-                <p class="hero-text">Profesjonelle VVS-tjenester for hjem og bedrift. Alt fra akutt vannlekkasje til komplette baderomsrenoveringer.</p>
-                <div class="hero-buttons">
-                    <a href="tel:40000000" class="btn-primary">
-                        <i class="fas fa-phone"></i>
-                        Ring nå: 400 00 000
-                    </a>
-                    <a href="#kontakt" class="btn-secondary">Få gratis befaring</a>
-                </div>
-                <div class="trust-badges">
-                    <div class="trust-item">
-                        <i class="fas fa-bolt"></i>
-                        <span>Døgnåpent</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Godkjent rørlegger</span>
-                    </div>
-                    <div class="trust-item">
-                        <i class="fas fa-star"></i>
-                        <span>5/5 på Google</span>
-                    </div>
-                </div>
+        <div class="hero-content">
+            <h1>Rørlegger i Trondheim <br><span class="highlight">siden 1998</span></h1>
+            <p class="hero-text">
+                Vi er en liten bedrift på 4 personer som holder til i Nardoveien. 
+                Ingen store konsern, bare folk som kan sitt fag.
+            </p>
+            <div class="hero-contact">
+                <a href="tel:73501234" class="btn-primary">
+                    📞 Ring: 73 50 12 34
+                </a>
+                <p class="hero-note">Eller send SMS, vi ringer tilbake</p>
             </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80" alt="VVS arbeid">
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="tjenester" class="services">
         <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Våre tjenester</span>
-                <h2>Alt innen VVS</h2>
-                <p>Vi tilbyr komplette løsninger for varme, ventilasjon og sanitær i Trondheim-området</p>
-            </div>
+            <h2>Det vi gjør</h2>
+            <p class="section-intro">Vi tar de fleste oppdrag i Trondheim og omegn. Ingen jobb er for liten, men noen kan være for store.</p>
+            
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600" alt="Baderom">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-bath"></i>
-                        </div>
-                        <h3>Baderom</h3>
-                        <p>Komplett renovering av baderom, nytt sluk, flislegging, og installasjon av sanitærutstyr.</p>
-                        <a href="#kontakt" class="service-link">Les mer <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                <div class="service-box">
+                    <h3>🚿 Baderom</h3>
+                    <ul>
+                        <li>Totalrenovering</li>
+                        <li>Skifte sluk</li>
+                        <li>Nye blandebatterier</li>
+                        <li>Reparasjon av lekkasje</li>
+                    </ul>
+                    <p class="price-hint">Fra kr 15 000 for enkelt bad</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600" alt="Varme">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                        <h3>Varme & Varmepumpe</h3>
-                        <p>Installasjon og service av varmepumper, panelovner, gulvvarme og sentralvarmeanlegg.</p>
-                        <a href="#kontakt" class="service-link">Les mer <i class="fas fa-arrow-right"></i></a>
-                    </div>
+
+                <div class="service-box">
+                    <h3>🔥 Varme</h3>
+                    <ul>
+                        <li>Varmepumper (vi er autorisert)</li>
+                        <li>Gulvvarme</li>
+                        <li>Panelovner</li>
+                        <li>Sentralvarme</li>
+                    </ul>
+                    <p class="price-hint">Gratis befaring</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600" alt="Rør">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-wrench"></i>
-                        </div>
-                        <h3>Rørleggertjenester</h3>
-                        <p>Reparasjon av vannlekkasje, tett avløp, byte av vannrør, og alle typer rørleggerarbeid.</p>
-                        <a href="#kontakt" class="service-link">Les mer <i class="fas fa-arrow-right"></i></a>
-                    </div>
+
+                <div class="service-box">
+                    <h3>🛠️ Rørlegger</h3>
+                    <ul>
+                        <li>Tette avløp</li>
+                        <li>Vannlekkasje</li>
+                        <li>Skifte vannrør</li>
+                        <li>Ny vaskemaskin</li>
+                    </ul>
+                    <p class="price-hint">Timepris: kr 750 inkl. mva</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1631545308772-81a0e0a3a6eb?w=600" alt="Ventilasjon">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon">
-                            <i class="fas fa-wind"></i>
-                        </div>
-                        <h3>Ventilasjon</h3>
-                        <p>Installasjon av balansert ventilasjon, ventilasjonsrens, og vedlikehold av ventilasjonsanlegg.</p>
-                        <a href="#kontakt" class="service-link">Les mer <i class="fas fa-arrow-right"></i></a>
-                    </div>
+
+                <div class="service-box">
+                    <h3>🌬️ Ventilasjon</h3>
+                    <ul>
+                        <li>Balansert ventilasjon</li>
+                        <li>Vedlikehold</li>
+                        <li>Reparasjon</li>
+                    </ul>
+                    <p class="price-hint">Pris etter befaring</p>
                 </div>
+            </div>
+
+            <div class="emergency-box">
+                <h3>🚨 Akutte oppdrag</h3>
+                <p>Vannlekkasje som ikke kan vente? Vi prøver alltid å komme samme dag.</p>
+                <p><strong>Tlf akutt: 73 50 12 34</strong> (trykk 1 for vakt)</p>
             </div>
         </div>
     </section>
 
-    <!-- Emergency Section -->
-    <section class="emergency">
-        <div class="container">
-            <div class="emergency-content">
-                <div class="emergency-text">
-                    <span class="badge-red"><i class="fas fa-exclamation-triangle"></i> Akutthjelp</span>
-                    <h2>Vannlekkasje eller tett avløp?</h2>
-                    <p>Vi er tilgjengelige 24/7 for akutte VVS-problemer. Ring oss nå for rask hjelp i Trondheim-området.</p>
-                    <a href="tel:40000000" class="btn-white">
-                        <i class="fas fa-phone-alt"></i>
-                        400 00 000
-                    </a>
-                </div>
-                <div class="emergency-features">
-                    <div class="feature">
-                        <i class="fas fa-clock"></i>
-                        <h4>Snart på stedet</h4>
-                        <p>Vanligvis innen 1-2 timer</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-tools"></i>
-                        <h4>Fullt utstyrt</h4>
-                        <p>Løser de fleste problemer på stedet</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-file-invoice"></i>
-                        <h4>Fastpris</h4>
-                        <p>Ingen overraskelser på regningen</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
     <section id="om-oss" class="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800" alt="Rørleggerteam">
-                    <div class="experience-badge">
-                        <span class="years">25+</span>
-                        <span class="text">års erfaring</span>
+                <div class="about-text">
+                    <h2>Om oss</h2>
+                    <p>
+                        Trondheim VVS ble startet av Jan Kristiansen i 1998. Han hadde nettopp 
+                        fått svennebrevet og lei av å jobbe for store firmaer hvor kundene bare 
+                        ble et nummer i køen.
+                    </p>
+                    <p>
+                        I dag er vi fire stykker: Jan, sønnen hans Thomas, og to lærlinger 
+                        (Mats og Erik). Vi holder til i et gammelt verksted i Nardoveien, 
+                        rett ved Lerkendal.
+                    </p>
+                    <p>
+                        Vi tar på oss de fleste oppdrag, men er ærlige når noe er utenfor 
+                        vårt område. Ingen vits i å love noe vi ikke kan holde.
+                    </p>
+                    
+                    <div class="credentials">
+                        <h4>Godkjenninger:</h4>
+                        <ul>
+                            <li>✓ Godkjent rørleggerbedrift</li>
+                            <li>✓ F-gass sertifisert (varmepumper)</li>
+                            <li>✓ Registrert i el-kompetanse</li>
+                            <li>✓ Ansvarsforsikring via Gjensidige</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="about-content">
-                    <span class="section-badge">Om oss</span>
-                    <h2>Trondheims mest pålitelige rørlegger</h2>
-                    <p>Trondheim VVS har hjulpet hjem og bedrifter i Trondheim-området i over 25 år. Vi er en familiebedrift som setter kunden i sentrum.</p>
-                    <p>Alle våre rørleggere er godkjente fagfolk med lang erfaring. Vi holder oss oppdatert på de nyeste teknikkene og materialene for å gi deg best mulig resultat.</p>
-                    <ul class="about-list">
-                        <li><i class="fas fa-check"></i> Godkjent av Sentralt Godkjenningsregister</li>
-                        <li><i class="fas fa-check"></i> 5 års garanti på alt arbeid</li>
-                        <li><i class="fas fa-check"></i> Gratis befaring og uforpliktende pristilbud</li>
-                        <li><i class="fas fa-check"></i> Miljøvennlige løsninger</li>
-                    </ul>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="Verksted">
+                    <p class="image-caption">Verkstedet vårt i Nardoveien 10</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="stats">
+    <section class="testimonials">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat">
-                    <span class="stat-number">2500+</span>
-                    <span class="stat-label">Fornøyde kunder</span>
+            <h2>Hva kundene sier</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Jan kom innom samme dag jeg ringte om en lekkasje. Ordnet det på en time. Anbefales!"</p>
+                    <cite>— Kari Nilsen, Byåsen</cite>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">25</span>
-                    <span class="stat-label">Års erfaring</span>
+                <div class="testimonial">
+                    <p>"Endelig en rørlegger som ikke snakker i koder. Forklarte alt på en forståelig måte."</p>
+                    <cite>— Per Hansen, Lade</cite>
                 </div>
-                <div class="stat">
-                    <span class="stat-number">15</span>
-                    <span class="stat-label">Minutter responstid</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">5/5</span>
-                    <span class="stat-label">Google-anmeldelser</span>
+                <div class="testimonial">
+                    <p>"Fikset gulvvarmen vår etter at to andre firmaer hadde gitt opp. Lokale helter!"</p>
+                    <cite>— Familie Olsen, Strindheim</cite>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="kontakt" class="contact">
         <div class="container">
+            <h2>Kontakt oss</h2>
+            
             <div class="contact-grid">
                 <div class="contact-info">
-                    <span class="section-badge">Kontakt oss</span>
-                    <h2>Ta kontakt for gratis befaring</h2>
-                    <p>Send oss en melding eller ring direkte. Vi svarer vanligvis innen 15 minutter.</p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <span>Telefon</span>
-                                <a href="tel:40000000">400 00 000</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span>E-post</span>
-                                <a href="mailto:post@trondheimvvs.no">post@trondheimvvs.no</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <span>Adresse</span>
-                                <p>Nardoveien 10<br>7032 Trondheim</p>
-                            </div>
-                        </div>
+                    <div class="contact-block">
+                        <h3>📞 Telefon</h3>
+                        <p class="big-number">73 50 12 34</p>
+                        <p>Akutt? Send SMS med "AKUTT" så ringer vi tilbake ASAP</p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h3>📧 E-post</h3>
+                        <p><a href="mailto:post@trondheimvvs.no">post@trondheimvvs.no</a></p>
+                        <p>Svarer vanligvis innen 24 timer</p>
+                    </div>
+
+                    <div class="contact-block">
+                        <h3>📍 Besøk oss</h3>
+                        <p>
+                            Nardoveien 10<br>
+                            7032 Trondheim<br>
+                            <small>(Inngang bak Coop Prix)</small>
+                        </p>
                     </div>
 
                     <div class="opening-hours">
-                        <h4>Åpningstider</h4>
-                        <ul>
-                            <li><span>Mandag - Fredag:</span> 07:00 - 16:00</li>
-                            <li><span>Lørdag:</span> 09:00 - 14:00</li>
-                            <li><span>Søndag:</span> Stengt</li>
-                            <li class="highlight"><span>Akutt:</span> Døgnåpent</li>
-                        </ul>
+                        <h3>⏰ Åpningstider</h3>
+                        <table>
+                            <tr><td>Man–Tor:</td><td>07:00–15:30</td></tr>
+                            <tr><td>Fre:</td><td>07:00–14:00</td></tr>
+                            <tr><td>Lør–Søn:</td><td>Stengt</td></tr>
+                            <tr class="note"><td colspan="2">Men vi tar akutte oppdrag!</td></tr>
+                        </table>
                     </div>
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <h3>Send oss en melding</h3>
-                        <div class="form-group">
-                            <label for="name">Navn</label>
-                            <input type="text" id="name" name="name" placeholder="Ditt navn" required>
+                    <h3>Send oss en melding</h3>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <label>
+                                Navn *
+                                <input type="text" name="navn" required>
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <label for="phone">Telefon</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer" required>
+                        <div class="form-row">
+                            <label>
+                                Telefon *
+                                <input type="tel" name="telefon" required>
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <label for="email">E-post</label>
-                            <input type="email" id="email" name="email" placeholder="Din e-post">
+                        <div class="form-row">
+                            <label>
+                                E-post
+                                <input type="email" name="epost">
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <label for="service">Tjeneste</label>
-                            <select id="service" name="service">
-                                <option value="">Velg tjeneste</option>
-                                <option value="bad">Baderom</option>
-                                <option value="varme">Varme/Varmepumpe</option>
-                                <option value="ror">Rørleggertjenester</option>
-                                <option value="ventilasjon">Ventilasjon</option>
-                                <option value="akutt">Akutthjelp</option>
-                                <option value="annet">Annet</option>
-                            </select>
+                        <div class="form-row">
+                            <label>
+                                Hva gjelder det?
+                                <select name="tjeneste">
+                                    <option value="">Velg...</option>
+                                    <option value="bad">Baderom</option>
+                                    <option value="varme">Varme/varmepumpe</option>
+                                    <option value="ror">Rør/reparasjon</option>
+                                    <option value="avlop">Tett avløp</option>
+                                    <option value="lekkasje">Vannlekkasje</option>
+                                    <option value="ventilasjon">Ventilasjon</option>
+                                    <option value="annet">Annet</option>
+                                </select>
+                            </label>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Melding</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Beskriv ditt prosjekt eller problem..."></textarea>
+                        <div class="form-row">
+                            <label>
+                                Beskrivelse
+                                <textarea name="beskrivelse" rows="4" placeholder="Fortell kort om oppdraget..."></textarea>
+                            </label>
                         </div>
-                        <button type="submit" class="btn-submit">
-                            <i class="fas fa-paper-plane"></i>
-                            Send melding
-                        </button>
+                        <button type="submit" class="btn-submit">Send melding</button>
+                        <p class="form-note">* Må fylles ut. Vi ringer deg vanligvis samme dag.</p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="footer-logo">
-                        <i class="fas fa-faucet"></i>
-                        Trondheim VVS
-                    </a>
-                    <p>Din lokale rørlegger i Trondheim. Vi setter kvalitet og kundetilfredshet i første rekke.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-main">
+                    <h4>Trondheim VVS AS</h4>
+                    <p>Nardoveien 10, 7032 Trondheim</p>
+                    <p>Tlf: 73 50 12 34</p>
+                    <p>Org.nr: 912 345 678</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Tjenester</h4>
-                    <ul>
-                        <li><a href="#">Baderom</a></li>
-                        <li><a href="#">Varme & Varmepumpe</a></li>
-                        <li><a href="#">Rørleggertjenester</a></li>
-                        <li><a href="#">Ventilasjon</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Selskapet</h4>
-                    <ul>
-                        <li><a href="#">Om oss</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Karriere</a></li>
-                        <li><a href="#">Personvern</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Kontakt</h4>
-                    <p><i class="fas fa-phone"></i> 400 00 000</p>
-                    <p><i class="fas fa-envelope"></i> post@trondheimvvs.no</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Nardoveien 10, 7032 Trondheim</p>
+                    <a href="#tjenester">Tjenester</a>
+                    <a href="#om-oss">Om oss</a>
+                    <a href="#kontakt">Kontakt</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Trondheim VVS AS. Alle rettigheter reservert. Org.nr: 987 654 321</p>
+                <p>© 2024 Trondheim VVS AS. Vi er ikke et stort konsern, bare folk som kan sitt fag.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
