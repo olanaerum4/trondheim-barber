@@ -5,99 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trondheim VVS AS - Rørlegger i Trondheim</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <span class="logo-icon">🔧</span>
+            <a href="#" class="logo">
+                <div class="logo-mark">TV</div>
                 <div class="logo-text">
-                    <strong>Trondheim VVS AS</strong>
-                    <small>Org.nr: 912 345 678</small>
+                    <span class="logo-name">Trondheim VVS AS</span>
+                    <span class="logo-tag">Din lokale rørlegger</span>
                 </div>
-            </div>
+            </a>
             <nav class="nav">
-                <a href="#tjenester">Det vi gjør</a>
+                <a href="#tjenester">Tjenester</a>
                 <a href="#om-oss">Om oss</a>
-                <a href="#kontakt" class="nav-cta">Kontakt</a>
+                <a href="#kontakt" class="nav-cta">Kontakt oss</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Rørlegger i Trondheim <br><span class="highlight">siden 1998</span></h1>
-            <p class="hero-text">
-                Vi er en liten bedrift på 4 personer som holder til i Nardoveien. 
-                Ingen store konsern, bare folk som kan sitt fag.
-            </p>
-            <div class="hero-contact">
-                <a href="tel:73501234" class="btn-primary">
-                    📞 Ring: 73 50 12 34
-                </a>
-                <p class="hero-note">Eller send SMS, vi ringer tilbake</p>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="badge">Etablert 1998</span>
+                    <h1>Rørlegger i Trondheim</h1>
+                    <p class="hero-text">
+                        Vi er en liten bedrift på 4 personer som holder til i Nardoveien. 
+                        Ingen store konsern, bare folk som kan sitt fag.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="tel:73501234" class="btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            73 50 12 34
+                        </a>
+                        <a href="#kontakt" class="btn-secondary">Få pristilbud</a>
+                    </div>
+                    <p class="hero-note">Eller send SMS, vi ringer tilbake</p>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80" alt="VVS arbeid">
+                    <div class="experience-card">
+                        <span class="number">25+</span>
+                        <span class="label">år i Trondheim</span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80" alt="VVS arbeid">
         </div>
     </section>
 
     <section id="tjenester" class="services">
         <div class="container">
-            <h2>Det vi gjør</h2>
-            <p class="section-intro">Vi tar de fleste oppdrag i Trondheim og omegn. Ingen jobb er for liten, men noen kan være for store.</p>
+            <div class="section-header">
+                <h2>Det vi gjør</h2>
+                <p>Vi tar de fleste oppdrag i Trondheim og omegn. Ingen jobb er for liten.</p>
+            </div>
             
             <div class="services-grid">
-                <div class="service-box">
-                    <h3>🚿 Baderom</h3>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Baderom</h3>
                     <ul>
                         <li>Totalrenovering</li>
                         <li>Skifte sluk</li>
                         <li>Nye blandebatterier</li>
                         <li>Reparasjon av lekkasje</li>
                     </ul>
-                    <p class="price-hint">Fra kr 15 000 for enkelt bad</p>
+                    <span class="price">Fra kr 15 000</span>
                 </div>
 
-                <div class="service-box">
-                    <h3>🔥 Varme</h3>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 3v18M8 7h8M8 11h8M8 15h8"/>
+                        </svg>
+                    </div>
+                    <h3>Varme</h3>
                     <ul>
-                        <li>Varmepumper (vi er autorisert)</li>
+                        <li>Varmepumper (autorisert)</li>
                         <li>Gulvvarme</li>
                         <li>Panelovner</li>
                         <li>Sentralvarme</li>
                     </ul>
-                    <p class="price-hint">Gratis befaring</p>
+                    <span class="price">Gratis befaring</span>
                 </div>
 
-                <div class="service-box">
-                    <h3>🛠️ Rørlegger</h3>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6"/>
+                        </svg>
+                    </div>
+                    <h3>Rørlegger</h3>
                     <ul>
                         <li>Tette avløp</li>
                         <li>Vannlekkasje</li>
                         <li>Skifte vannrør</li>
                         <li>Ny vaskemaskin</li>
                     </ul>
-                    <p class="price-hint">Timepris: kr 750 inkl. mva</p>
+                    <span class="price">kr 750/t inkl. mva</span>
                 </div>
 
-                <div class="service-box">
-                    <h3>🌬️ Ventilasjon</h3>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        </svg>
+                    </div>
+                    <h3>Ventilasjon</h3>
                     <ul>
                         <li>Balansert ventilasjon</li>
                         <li>Vedlikehold</li>
                         <li>Reparasjon</li>
                     </ul>
-                    <p class="price-hint">Pris etter befaring</p>
+                    <span class="price">Etter befaring</span>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="emergency-box">
-                <h3>🚨 Akutte oppdrag</h3>
-                <p>Vannlekkasje som ikke kan vente? Vi prøver alltid å komme samme dag.</p>
-                <p><strong>Tlf akutt: 73 50 12 34</strong> (trykk 1 for vakt)</p>
+    <section class="emergency">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-text">
+                    <span class="label-red">Akutte oppdrag</span>
+                    <h2>Vannlekkasje som ikke kan vente?</h2>
+                    <p>Vi prøver alltid å komme samme dag. Ring og trykk 1 for vakt.</p>
+                </div>
+                <a href="tel:73501234" class="btn-emergency">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    73 50 12 34
+                </a>
             </div>
         </div>
     </section>
@@ -105,8 +153,12 @@
     <section id="om-oss" class="about">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <h2>Om oss</h2>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80" alt="Verksted">
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Om oss</span>
+                    <h2>En bedrift bygget på håndverk</h2>
                     <p>
                         Trondheim VVS ble startet av Jan Kristiansen i 1998. Han hadde nettopp 
                         fått svennebrevet og lei av å jobbe for store firmaer hvor kundene bare 
@@ -117,24 +169,37 @@
                         (Mats og Erik). Vi holder til i et gammelt verksted i Nardoveien, 
                         rett ved Lerkendal.
                     </p>
-                    <p>
-                        Vi tar på oss de fleste oppdrag, men er ærlige når noe er utenfor 
-                        vårt område. Ingen vits i å love noe vi ikke kan holde.
-                    </p>
                     
                     <div class="credentials">
-                        <h4>Godkjenninger:</h4>
-                        <ul>
-                            <li>✓ Godkjent rørleggerbedrift</li>
-                            <li>✓ F-gass sertifisert (varmepumper)</li>
-                            <li>✓ Registrert i el-kompetanse</li>
-                            <li>✓ Ansvarsforsikring via Gjensidige</li>
-                        </ul>
+                        <div class="cred-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Godkjent rørleggerbedrift
+                        </div>
+                        <div class="cred-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            F-gass sertifisert
+                        </div>
+                        <div class="cred-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Registrert i el-kompetanse
+                        </div>
+                        <div class="cred-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            Ansvarsforsikring via Gjensidige
+                        </div>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80" alt="Verksted">
-                    <p class="image-caption">Verkstedet vårt i Nardoveien 10</p>
                 </div>
             </div>
         </div>
@@ -142,19 +207,33 @@
 
     <section class="testimonials">
         <div class="container">
-            <h2>Hva kundene sier</h2>
+            <div class="section-header">
+                <h2>Hva kundene sier</h2>
+            </div>
             <div class="testimonial-grid">
-                <div class="testimonial">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
                     <p>"Jan kom innom samme dag jeg ringte om en lekkasje. Ordnet det på en time. Anbefales!"</p>
-                    <cite>— Kari Nilsen, Byåsen</cite>
+                    <div class="author">
+                        <strong>Kari Nilsen</strong>
+                        <span>Byåsen</span>
+                    </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
                     <p>"Endelig en rørlegger som ikke snakker i koder. Forklarte alt på en forståelig måte."</p>
-                    <cite>— Per Hansen, Lade</cite>
+                    <div class="author">
+                        <strong>Per Hansen</strong>
+                        <span>Lade</span>
+                    </div>
                 </div>
-                <div class="testimonial">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
                     <p>"Fikset gulvvarmen vår etter at to andre firmaer hadde gitt opp. Lokale helter!"</p>
-                    <cite>— Familie Olsen, Strindheim</cite>
+                    <div class="author">
+                        <strong>Familie Olsen</strong>
+                        <span>Strindheim</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -162,86 +241,95 @@
 
     <section id="kontakt" class="contact">
         <div class="container">
-            <h2>Kontakt oss</h2>
-            
             <div class="contact-grid">
                 <div class="contact-info">
-                    <div class="contact-block">
-                        <h3>📞 Telefon</h3>
-                        <p class="big-number">73 50 12 34</p>
-                        <p>Akutt? Send SMS med "AKUTT" så ringer vi tilbake ASAP</p>
+                    <span class="section-label">Kontakt oss</span>
+                    <h2>Ta kontakt for uforpliktende tilbud</h2>
+                    <p class="contact-intro">Vi svarer vanligvis innen 24 timer. Akutte oppdrag ringer du direkte.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <span class="label">Telefon</span>
+                                <a href="tel:73501234" class="value">73 50 12 34</a>
+                            </div>
+                        </div>
+                        
+                        <div class="method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <span class="label">E-post</span>
+                                <a href="mailto:post@trondheimvvs.no" class="value">post@trondheimvvs.no</a>
+                            </div>
+                        </div>
+                        
+                        <div class="method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <span class="label">Besøk oss</span>
+                                <span class="value">Nardoveien 10, 7032 Trondheim<br><small>Inngang bak Coop Prix</small></span>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="contact-block">
-                        <h3>📧 E-post</h3>
-                        <p><a href="mailto:post@trondheimvvs.no">post@trondheimvvs.no</a></p>
-                        <p>Svarer vanligvis innen 24 timer</p>
-                    </div>
-
-                    <div class="contact-block">
-                        <h3>📍 Besøk oss</h3>
-                        <p>
-                            Nardoveien 10<br>
-                            7032 Trondheim<br>
-                            <small>(Inngang bak Coop Prix)</small>
-                        </p>
-                    </div>
-
-                    <div class="opening-hours">
-                        <h3>⏰ Åpningstider</h3>
-                        <table>
-                            <tr><td>Man–Tor:</td><td>07:00–15:30</td></tr>
-                            <tr><td>Fre:</td><td>07:00–14:00</td></tr>
-                            <tr><td>Lør–Søn:</td><td>Stengt</td></tr>
-                            <tr class="note"><td colspan="2">Men vi tar akutte oppdrag!</td></tr>
-                        </table>
+                    
+                    <div class="hours">
+                        <h4>Åpningstider</h4>
+                        <div class="hours-row"><span>Man–Tor:</span><span>07:00–15:30</span></div>
+                        <div class="hours-row"><span>Fre:</span><span>07:00–14:00</span></div>
+                        <div class="hours-row"><span>Lør–Søn:</span><span>Stengt</span></div>
+                        <p class="hours-note">Akutte oppdrag: Ring og trykk 1</p>
                     </div>
                 </div>
-
+                
                 <div class="contact-form-wrapper">
                     <h3>Send oss en melding</h3>
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="form-row">
-                            <label>
-                                Navn *
-                                <input type="text" name="navn" required>
-                            </label>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Navn *</label>
+                            <input type="text" required placeholder="Ditt navn">
                         </div>
-                        <div class="form-row">
-                            <label>
-                                Telefon *
-                                <input type="tel" name="telefon" required>
-                            </label>
+                        <div class="form-group">
+                            <label>Telefon *</label>
+                            <input type="tel" required placeholder="Ditt telefonnummer">
                         </div>
-                        <div class="form-row">
-                            <label>
-                                E-post
-                                <input type="email" name="epost">
-                            </label>
+                        <div class="form-group">
+                            <label>E-post</label>
+                            <input type="email" placeholder="Din e-post">
                         </div>
-                        <div class="form-row">
-                            <label>
-                                Hva gjelder det?
-                                <select name="tjeneste">
-                                    <option value="">Velg...</option>
-                                    <option value="bad">Baderom</option>
-                                    <option value="varme">Varme/varmepumpe</option>
-                                    <option value="ror">Rør/reparasjon</option>
-                                    <option value="avlop">Tett avløp</option>
-                                    <option value="lekkasje">Vannlekkasje</option>
-                                    <option value="ventilasjon">Ventilasjon</option>
-                                    <option value="annet">Annet</option>
-                                </select>
-                            </label>
+                        <div class="form-group">
+                            <label>Hva gjelder det?</label>
+                            <select>
+                                <option>Velg tjeneste...</option>
+                                <option>Baderom</option>
+                                <option>Varme/varmepumpe</option>
+                                <option>Rør/reparasjon</option>
+                                <option>Tett avløp</option>
+                                <option>Vannlekkasje</option>
+                                <option>Ventilasjon</option>
+                                <option>Annet</option>
+                            </select>
                         </div>
-                        <div class="form-row">
-                            <label>
-                                Beskrivelse
-                                <textarea name="beskrivelse" rows="4" placeholder="Fortell kort om oppdraget..."></textarea>
-                            </label>
+                        <div class="form-group">
+                            <label>Beskrivelse</label>
+                            <textarea rows="4" placeholder="Fortell kort om oppdraget..."></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Send melding</button>
-                        <p class="form-note">* Må fylles ut. Vi ringer deg vanligvis samme dag.</p>
+                        <p class="form-note">Vi ringer deg vanligvis samme dag</p>
                     </form>
                 </div>
             </div>
@@ -250,17 +338,23 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-main">
-                    <h4>Trondheim VVS AS</h4>
-                    <p>Nardoveien 10, 7032 Trondheim</p>
-                    <p>Tlf: 73 50 12 34</p>
-                    <p>Org.nr: 912 345 678</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-mark">TV</div>
+                    <div>
+                        <strong>Trondheim VVS AS</strong>
+                        <p>Org.nr: 912 345 678</p>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <a href="#tjenester">Tjenester</a>
                     <a href="#om-oss">Om oss</a>
                     <a href="#kontakt">Kontakt</a>
+                </div>
+                <div class="footer-contact">
+                    <p>Nardoveien 10, 7032 Trondheim</p>
+                    <p>73 50 12 34</p>
+                    <p>post@trondheimvvs.no</p>
                 </div>
             </div>
             <div class="footer-bottom">
