@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoverShop - Telefondeksler til alle mobiler</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">CoverShop</span>
+            </a>
+            <nav class="nav">
+                <a href="#produkter">Produkter</a>
+                <a href="#merker">Merker</a>
+                <a href="#tilbud">Tilbud</a>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                </button>
+                <button class="cart-btn" onclick="toggleCart()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                        <path d="M3 6h18"/>
+                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Ny kolleksjon 2024</span>
+                <h1>Beskytt mobilen din med stil</h1>
+                <p>Over 500+ deksler til iPhone, Samsung, Xiaomi og mer. Gratis frakt over kr 299.</p>
+                <a href="#produkter" class="btn-primary">Se utvalget</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=800&q=80" alt="Telefondeksler">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2>Velg ditt merke</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">🍎</div>
+                    <span>iPhone</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">📱</div>
+                    <span>Samsung</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">📲</div>
+                    <span>Xiaomi</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">📞</div>
+                    <span>Google Pixel</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">🤳</div>
+                    <span>OnePlus</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">📳</div>
+                    <span>Huawei</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="produkter" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Populære deksler</h2>
+                <div class="filters">
+                    <button class="filter-btn active">Alle</button>
+                    <button class="filter-btn">Silikon</button>
+                    <button class="filter-btn">Lær</button>
+                    <button class="filter-btn">Hårdplast</button>
+                    <button class="filter-btn">Gjennomsiktig</button>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-id="1" data-name="iPhone 15 Pro Silikon Deksel" data-price="299" data-image="https://images.unsplash.com/photo-1603313011101-320f26a4f6f6?w=400&q=80">
+                    <div class="product-badge">Bestseller</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603313011101-320f26a4f6f6?w=400&q=80" alt="iPhone 15 Pro deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Apple</span>
+                        <h3>iPhone 15 Pro Silikon Deksel</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(127)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 299</span>
+                            <span class="old-price">kr 399</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(1, 'iPhone 15 Pro Silikon Deksel', 299, 'https://images.unsplash.com/photo-1603313011101-320f26a4f6f6?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-id="2" data-name="Samsung S24 Ultra Clear Case" data-price="249" data-image="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=400&q=80">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?w=400&q=80" alt="Samsung deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Samsung</span>
+                        <h3>Samsung S24 Ultra Clear Case</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 249</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(2, 'Samsung S24 Ultra Clear Case', 249, 'https://images.unsplash.com/photo-1586105251261-72a756497a11?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-id="3" data-name="iPhone 14 Lær Wallet" data-price="449" data-image="https://images.unsplash.com/photo-1549488497-29532f1373b3?w=400&q=80">
+                    <div class="product-badge new">Nyhet</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549488497-29532f1373b3?w=400&q=80" alt="Lær wallet">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Premium</span>
+                        <h3>iPhone 14 Lær Wallet</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(56)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 449</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(3, 'iPhone 14 Lær Wallet', 449, 'https://images.unsplash.com/photo-1549488497-29532f1373b3?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-id="4" data-name="Xiaomi 13T Rugged Armor" data-price="199" data-image="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&q=80">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&q=80" alt="Xiaomi deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Spigen</span>
+                        <h3>Xiaomi 13T Rugged Armor</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(203)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 199</span>
+                            <span class="old-price">kr 299</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(4, 'Xiaomi 13T Rugged Armor', 199, 'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-id="5" data-name="iPhone 15 MagSafe Leather" data-price="599" data-image="https://images.unsplash.com/photo-1616348436168-de43ad0db179?w=400&q=80">
+                    <div class="product-badge">Premium</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?w=400&q=80" alt="MagSafe deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Apple</span>
+                        <h3>iPhone 15 MagSafe Leather</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(78)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 599</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(5, 'iPhone 15 MagSafe Leather', 599, 'https://images.unsplash.com/photo-1616348436168-de43ad0db179?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-id="6" data-name="Samsung A54 Silikon Grønn" data-price="179" data-image="https://images.unsplash.com/photo-1512054502232-10a0a035d672?w=400&q=80">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?w=400&q=80" alt="Samsung A54 deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Samsung</span>
+                        <h3>Samsung A54 Silikon Grønn</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(145)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 179</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(6, 'Samsung A54 Silikon Grønn', 179, 'https://images.unsplash.com/photo-1512054502232-10a0a035d672?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-id="7" data-name="Google Pixel 8 Pro Clear" data-price="229" data-image="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&q=80">
+                    <div class="product-badge new">Nyhet</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&q=80" alt="Pixel deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">Google</span>
+                        <h3>Google Pixel 8 Pro Clear</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="count">(34)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 229</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(7, 'Google Pixel 8 Pro Clear', 229, 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-id="8" data-name="OnePlus 12 Carbon Fiber" data-price="259" data-image="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&q=80">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&q=80" alt="OnePlus deksel">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">OnePlus</span>
+                        <h3>OnePlus 12 Carbon Fiber</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="count">(67)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">kr 259</span>
+                            <span class="old-price">kr 329</span>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(8, 'OnePlus 12 Carbon Fiber', 259, 'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&q=80')">
+                            Legg i handlekurv
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Gratis frakt</h3>
+                    <p>På alle bestillinger over kr 299</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">↩️</div>
+                    <h3>30 dagers retur</h3>
+                    <p>Bytt eller få pengene tilbake</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Sikker betaling</h3>
+                    <p>Klarna, Vipps og kort</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Rask levering</h3>
+                    <p>1-3 virkedager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" onclick="toggleCart()"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Handlekurv</h3>
+            <button class="close-cart" onclick="toggleCart()">×</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be inserted here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Totalt:</span>
+                <span class="total-price">kr 0</span>
+            </div>
+            <button class="checkout-btn" onclick="goToCheckout()">Gå til kassen</button>
+            <p class="free-shipping">Få gratis frakt ved kr 299 til</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h4>CoverShop</h4>
+                    <p>Din nettbutikk for telefondeksler. Over 500+ produkter til alle større merker.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Kundeservice</h5>
+                    <a href="#">Kontakt oss</a>
+                    <a href="#">Retur</a>
+                    <a href="#">Frakt</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Populære merker</h5>
+                    <a href="#">iPhone</a>
+                    <a href="#">Samsung</a>
+                    <a href="#">Xiaomi</a>
+                    <a href="#">Google Pixel</a>
+                </div>
+                <div class="footer-links">
+                    <h5>Følg oss</h5>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">TikTok</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CoverShop. Org.nr: 123 456 789</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
